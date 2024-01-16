@@ -1,0 +1,10 @@
+            let privateKey = Curve25519.KeyAgreement.PrivateKey()
+            let privateKeyData = privateKey.rawRepresentation
+            let privateKeyBase64 = privateKeyData.base64EncodedString()
+            
+            let publicKey = privateKey.publicKey
+            let publicKeyData = publicKey.rawRepresentation
+            let publicKeyBase64 = publicKeyData.base64EncodedString()
+
+
+            
